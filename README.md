@@ -48,6 +48,12 @@ Each layer communicates through interfaces, allowing separation of concerns and 
 	````bash
 	dotnet run --project BookStore.API
 
+9. **Create token:**
+In Swagger, use this credentials for "login":
+- username: testing
+- password: password
+ 	
+
  ## Design Decisions
 - **Separation of layers**: The application follows a multi-tier architecture to ensure that the business logic is separated from the data access and presentation layer (API).
 - **Use of Entity Framework Core**: EF Core was chosen to handle database operations because of its seamless integration with .NET and support for migrations.
@@ -57,3 +63,6 @@ Each layer communicates through interfaces, allowing separation of concerns and 
 
 ## Challenges and Approach
 Unit testing the services with Moq presented some technical challenges due to the asynchronous nature of operations in EF Core. Additionally, I faced difficulties in deploying to Azure as it was my first experience with this technology.
+
+## Improvements
+I realized that I could create a generic service for both entities.
