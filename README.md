@@ -35,7 +35,7 @@ Each layer communicates through interfaces, allowing separation of concerns and 
    "JwtSettings": {
     "Issuer": "BookStoreAPI",
     "Audience": "BookStoreClient",
-    "Key": "!zDSFG9c8D7xSGc9789887AxG890!",
+    "Key": "SuperSecretKey12345!!!!!!!!!!!!!!!!!!!!!",
     "DurationInMinutes": 60
     }
 
