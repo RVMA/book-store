@@ -4,6 +4,7 @@ using BookStore.Business.Models;
 using BookStore.Business.Services;
 using BookStore.Data.Entities;
 using BookStore.Shared.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 
@@ -11,6 +12,7 @@ namespace BookStore.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class BooksController : ControllerBase
     {
         private readonly BookService _bookService;
